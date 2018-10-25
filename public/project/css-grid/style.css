@@ -1,0 +1,155 @@
+/* universal reset*/
+* {
+	padding:0;
+	margin: 0;
+}
+
+
+/* mendefinisikan item grid*/
+.kol1 {
+	grid-area: header;
+}
+
+.kol2 {
+	grid-area: menu;
+}
+
+.kol3 {
+	grid-area: box1;
+}
+
+.kol4 {
+	grid-area: box2;
+}
+
+.kol5 {
+	grid-area: box3;
+}
+
+.kol6 {
+	grid-area: footer;
+}
+
+.grid-con {
+	display: grid;
+	grid-template-areas:
+		'header header header header header header'
+		'menu menu menu box1 box1 box1'
+		'menu menu menu box2 box2 box2'
+		'menu menu menu box3 box3 box3'
+		'footer footer footer footer footer footer';
+
+	grid-gap:10px;
+	background-color: #f2f3f8;
+	height: 800px;
+	max-height: 900px;
+	max-width: 1349px;
+
+}
+
+.grid-con > div {
+	text-align: center;
+  	padding: 40px 0;
+  	font-size: 30px;
+}
+
+.grid-con .kol1 {
+	background-color: white;
+	height: 60px;
+}
+
+.grid-con .kol1 img {
+	max-width: 300px;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.grid-con .kol2 {
+	background-color: #8395a7;
+	max-width: 800px;
+	color: white;
+}
+
+.grid-con .kol2 h6 {
+	font-size: 16px;
+	padding-top: 15px;
+}
+
+.grid-con .kol2 p {
+	font-size: 14px;
+}
+
+.grid-con .kol2 img {
+	width: 120px;
+}
+
+.grid-con .kol3 {
+	background-color: #8c7ae6;
+}
+
+.grid-con .kol4 {
+	background-color: #8c7ae6;
+}
+
+.grid-con .kol5 {
+	background-color: #8c7ae6;
+}
+
+.grid-con .kol6 {
+	background-color: #353b48;
+	font-size: 16px;
+	color: white;
+}
+
+.grid-con .kol6 p a{
+	text-decoration: none;
+	color: skyblue;
+}
+
+.nw-love {
+	color: red;
+}
+
+button {
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 10px;
+	width: 200px;
+}
+
+button:hover {
+	background-color: #fbc531;
+}
+
+a button {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+@media screen and (min-width: 1386px){
+	body {
+		justify-content: center;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.grid-con {
+		grid-template-areas:
+		'header header header header header header'
+		'menu menu menu menu menu menu'
+		'box1 box1 box1 box1 box1 box1'
+		'box2 box2 box2 box2 box2 box2'
+		'box3 box3 box3 box3 box3 box3'
+		'footer footer footer footer footer footer';
+	}
+
+	.kol2 {
+		height: 300px;
+	}
+}
+
+
+

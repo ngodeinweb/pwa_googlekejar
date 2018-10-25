@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Program Kalkulator - Google Mobile Web Specialist </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- tambahkan async agar diproses bersamaan dengan html -->
+	<script type="text/javascript" src="add2numbers.js" async></script>
+
+	<style type="text/css">
+		input {
+			font-size: large;
+			text-align: center;
+		}
+		input:focus {
+			border: 2px solid skyblue;
+		}
+
+		body {
+			background-color: #f9f9fa;
+			font-family: arial;
+		}
+
+		.container {
+			  position: fixed;
+			  top: 50%;
+			  left: 50%;
+			  width: 500px;
+			  height: 300px;
+			  /* bring your own prefixes */
+			  transform: translate(-50%, -50%);
+
+			  border-radius: 8px;
+			  box-shadow: 0 1px 3px 2px #ced4da;
+			  background-color: white;
+			  text-align: center;
+			  justify-content: center;
+		}
+
+		.prog {
+			background-color: skyblue;
+			border-radius: 8px 8px 0 0;
+			height: 50px;
+			margin-bottom: 60px;
+		}
+		.prog h4 {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 15px;
+			color: white;
+			letter-spacing: 1px;
+		}
+		.footer {
+			padding-top: 70px;
+			line-height: 5px;
+			color: #6c757d;
+		}
+
+		@media screen and (max-width: 768px){
+			.container {
+			  max-width: 350px;
+			  height: 300px;
+			  transform: translate(-50%, -50%); 
+			}
+		}
+
+		@media screen and (max-width: 320px){
+			.container {
+			  max-width: 280px;
+			  height: 300px;
+			  transform: translate(-50%, -50%); 
+			}
+			input {
+				font-size: 14px;
+				text-align: center;
+			}
+			.footer {
+				padding-top: 80px;
+				font-size: 12px;
+				
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+
+			<div class="prog">
+				<h4> Kalkulator Penjumlahan </h4>
+			</div>
+			<div class="calc">
+				<p> <small>Masukan Angka</small> </p>
+				<input type="text" size="5" value="0">
+				+
+				<input type="text" size="5" value="0">
+				<button id="jmlh"> = </button>
+				<input type="text" size="5" readonly>
+			</div>
+
+			<div class="footer">
+				<small>
+					<p> by Yudi Arif Kurniawan </p>
+					<p> Program Google Mobile Web Specialist - Inixindo</p>
+				</small>
+			</div>
+			
+		</div>
+	</div>
+
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+/*
+ bg grey = #f2f3f8
+ grey line = #ebedf2
+ black text = #575962
+ ungu = #5867dd
+ biru = #53b0f8
+ orange = #ffb822
+
+
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: roboto;
+}
+
+body {
+	background-color: #f2f3f8;
+	width: 100%;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.header {
+	background-color: white;
+	height: 70px;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0 1px 20px 1px #ebedf2;
+	width: 100%;
+}
+
+.nav {
+	padding: 12px 20px 10px 35px;
+	display: flex;
+}
+
+.nav img {
+	width: 60px;
+	height: 50px;
+}
+
+.nav p  {
+	padding: 12px 5px 10px 16px;
+}
+
+.nav p a {
+	text-decoration: none;
+	color: #575962;
+}
+
+.nav p a:hover {
+	color: #53b0f8;
+}
+
+.info {
+	padding-top: 30px;
+}
+
+.alert-info {
+	background-color: #53b0f8;
+	border: 1px solid #53b0f8;
+	color: white;
+}
+
+/*======================= main =======================*/
+.profile {
+	background-color: white;
+	margin-bottom: 30px;
+	height: 500px;
+	color: #575962;
+}
+
+.profile .title {
+	border-bottom: 1px solid #ebedf2;
+	height: 60px;
+}
+
+.profile .title p {
+	padding: 15px;
+}
+
+.profile .bd-profile {
+	justify-content: center;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.profile .bd-profile img {
+	width: 90px;
+	padding-bottom: 30px;
+}
+
+.profile .bd-profile p {
+	margin: 0;
+}
+
+/*==================== sidebar =======================*/
+.sidebar {
+	background-color: white;
+	margin-bottom: 30px;
+	height: 500px;
+	color: #575962;
+}
+
+.sidebar .title {
+	border-bottom: 1px solid #ebedf2;
+	height: 60px;
+}
+
+.sidebar .title p {
+	padding: 15px;
+}
+
+.sidebar .project {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sidebar .pj-title {
+	background-color: #5867dd;
+	border-radius: 5px 5px 0 0;
+	color: white;
+}
+
+.sidebar .pj-title p {
+	margin: 0;
+	padding: 15px;
+}
+
+.sidebar .pj-body {
+	background-color: #f2f3f8;
+	padding: 10px;
+	border-radius: 0 0 5px 5px;
+	text-align: center;
+}
+
+.btn-warning {
+	margin-bottom: 10px;
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+.btn-warning:hover {
+	background-color: #ffb822;
+	border: 1px solid #ffb822;
+	color: white;
+}
+
+/*==================== footer ========================*/
+.footer {
+	text-align: center;
+	padding: 25px;
+	color: #575962;
+	background-color: white;
+	box-shadow: 0 1px 20px 1px #ebedf2;
+}
+
+.footer p {
+	margin-bottom: 0;
+}
+
+.footer a {
+	color: #53b0f8;
+	text-decoration: none;
+}
+
+.nw-love {
+	color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+	.nav p  {
+		font-size: 12px;
+	}
+
+	.profile {
+		height: 400px;
+	}
+
+	.sidebar {
+		height: auto;
+	}
+
+	.btn-warning {
+		padding: auto;
+	}
+
+	.sidebar .col-md-4 {
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+}

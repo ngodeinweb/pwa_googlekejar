@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Landing Firebase </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel='manifest' href='manifest.json'>
+	  <meta name='mobile-web-app-capable' content='yes'>
+	  <meta name='apple-mobile-web-app-capable' content='yes'>
+	  <meta name='application-name' content='Yudi Firebase'>
+	  <meta name='apple-mobile-web-app-title' content='Yudi Firebase'>
+
+</head>
+<body>
+	<div class="wrapper">
+
+			<!-- header -->
+			<div class="header">
+				<div class="nav">
+					<img class="img-fluid" src="img/logo.png" alt="logo">
+					<p><a href="#tentang"> Selengkapnya </a></p>
+					<p><a href="https://fronthub.ngodeinweb.com" target="_blank"> Portofolio </a></p>
+				</div>
+			</div>
+
+			
+
+			<div class="container">
+				<div class="info">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="alert alert-info alert-dismissible show" role="alert">
+							  <strong>Haii!</strong> Ini merupakan free hosting yang dibuat menggunakan Google Firebase dalam program Google Mobile Web Specialist 2018
+							  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							    <span aria-hidden="true">&times;</span>
+							  </button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+					<div class="row">
+						<div class="col-md-4">
+							<div class="profile">
+								<div class="title">
+									<p> Tentang Saya </p>
+								</div>
+								<div  class="bd-profile">
+									<img class="img-fluid" src="img/avat1.png" alt="author">
+									<p><b> Yudi Arif Kurniawan </b></p>
+									<p><small>Mahasiswa - Web enthusiastic</small></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-8">
+							<div class="sidebar">
+								<div class="title">
+									<p>Project</p>
+								</div>
+								<div class="bd-sidebar">
+									<div class="project">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="pj-title">
+													<p> Penjumlahan </p>
+												</div>
+												<div class="pj-body">
+													<p> Program penjumlahan sederhana.</p>
+													<a class="btn btn-warning" href="https://yudi-3d207.firebaseapp.com/project/add2numbers/" target="_blank"> Demo</a>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<div class="pj-title">
+													<p> Mapbox </p>
+												</div>
+												<div class="pj-body">
+													<p> Map sederhana tentang tempat istimewa di Jogja.</p>
+													<a class="btn btn-warning" href="https://yudi-3d207.firebaseapp.com/project/Leaflet-Mapbox/" target="_blank">Demo </a>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<div class="pj-title">
+													<p> CSS Grid </p>
+												</div>
+												<div class="pj-body">
+													<p> Lorem ipsum dolor sit amet</p>
+													<a class="btn btn-warning" href="https://yudi-3d207.firebaseapp.com/project/css-grid/" target="_blank"> Demo</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+
+			</div>	
+
+			<div class="footer">
+				<p>Made with <span class="nw-love">♥</span> for people<p>
+				<p><small>by <a href="https://ngodeinweb.com/" rel="dofollow" target="_blank">ngodeinweb</a></small></p>
+			</div>
+	</div>
+</body>
+
+	<script>
+	    /*
+	     * Open the drawer when the menu ison is clicked.
+	     */
+	    if ('serviceWorker' in navigator) {
+	      navigator.serviceWorker.register('sw.js')
+	        .then(reg => console.log('Service Worker registered at ', reg.scope))
+	        .catch(error => console.log('Registration failed:', error))
+	    }
+	    else {
+	      console.log('Service-Worker not supported in this Browser');
+	    }
+
+
+	  </script>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.js" async></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+</html>

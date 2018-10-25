@@ -1,0 +1,16 @@
+
+{
+  "background_color": "#f7f7f7",
+  "description": "Firebase hosting yudi",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/img/avat1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Yudi Firebase",
+  "short_name": "Yudi",
+  "start_url": "https://yudi-3d207.firebaseapp.com/"
+}
